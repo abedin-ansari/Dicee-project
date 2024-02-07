@@ -1,36 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
     
-    var initialImgSrc1 = "images/dice6.jpg";
-    var initialImgSrc2 = "images/dice6.png";
+//     var initialImgSrc1 = "images/dice6.jpg";
+//     var initialImgSrc2 = "images/dice6.jpg";
     
-    document.querySelector(".img1").setAttribute("src", initialImgSrc1);
-    document.querySelector(".img2").setAttribute("src", initialImgSrc2);
-  });
+//     document.querySelector(".img1").setAttribute("src", initialImgSrc1);
+//     document.querySelector(".img2").setAttribute("src", initialImgSrc2);
+//   });
   
   
-  document.getElementById("rollButton").addEventListener("click", function() {
-    var randomNumber = Math.floor(Math.random() * 6) + 1;
-    var randomDiceImg = "dice" + randomNumber + ".jpg";
-    var randomImgSrc = "images/" + randomDiceImg;
-    var img1 = document.querySelector(".img1");
-    img1.setAttribute("src", randomImgSrc);
-  
-    var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-    var randomImgSrc2 = "images/dice" + randomNumber2 + ".jpg";
-    var img2 = document.querySelector(".img2");
-    img2.setAttribute("src", randomImgSrc2);
-  
-    if (randomNumber > randomNumber2) {
-      document.querySelector("h1").innerHTML = "Player 1 wins🏆";
-    } else if (randomNumber < randomNumber2) {
-      document.querySelector("h1").innerHTML = "Player 2 wins🏆";
-    } else {
-      document.querySelector("h1").innerHTML = "Draw!";
-    }
-  });  
-
-// document.getElementById("rollButton").addEventListener("click", function() {
-    
+//   document.getElementById("rollButton").addEventListener("click", function() {
 //     var randomNumber = Math.floor(Math.random() * 6) + 1;
 //     var randomDiceImg = "dice" + randomNumber + ".jpg";
 //     var randomImgSrc = "images/" + randomDiceImg;
@@ -42,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
 //     var img2 = document.querySelector(".img2");
 //     img2.setAttribute("src", randomImgSrc2);
   
-    
 //     if (randomNumber > randomNumber2) {
 //       document.querySelector("h1").innerHTML = "Player 1 wins🏆";
 //     } else if (randomNumber < randomNumber2) {
@@ -50,5 +27,28 @@ document.addEventListener("DOMContentLoaded", function() {
 //     } else {
 //       document.querySelector("h1").innerHTML = "Draw!";
 //     }
-//   });
+//   });  
+
+document.getElementById("rollButton").addEventListener("click", function() {
+    
+    var randomNumber = Math.floor(Math.random() * 6) + 1;
+    var randomDiceImg = "dice" + randomNumber + ".jpg";
+    var randomImgSrc = "images/" + randomDiceImg;
+    var img1 = document.querySelector(".img1");
+    img1.setAttribute("src", randomImgSrc);
+  
+    var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+    var randomImgSrc2 = "images/dice" + randomNumber2 + ".jpg";
+    var img2 = document.querySelector(".img2");
+    img2.setAttribute("src", randomImgSrc2);
+  
+    
+    if (randomNumber > randomNumber2) {
+      document.querySelector("h1").innerHTML = "Player 1 wins🏆";
+    } else if (randomNumber < randomNumber2) {
+      document.querySelector("h1").innerHTML = "Player 2 wins🏆";
+    } else {
+      document.querySelector("h1").innerHTML = "Draw!";
+    }
+  });
   
