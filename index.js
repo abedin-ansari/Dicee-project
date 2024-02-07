@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    var initialImgSrc1 = "images/dice6.jpg";
-    var initialImgSrc2 = "images/dice6.jpg";
+    var initialImgSrc1 = "images/dice1.jpg";
+    var initialImgSrc2 = "images/dice1.jpg";
     
     document.querySelector(".img1").setAttribute("src", initialImgSrc1);
     document.querySelector(".img2").setAttribute("src", initialImgSrc2);
